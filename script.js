@@ -1,0 +1,380 @@
+const projects = {
+    filmmaking: {
+        tag: 'Illustration / Branding',
+        title: 'Filmmaking Archive Africa',
+        description: 'A detailed illustrated logo for Filmmaking Archive Africa — a camera lens morphed into the shape of the African continent, rendered in warm brown, gold, and olive tones. Bold visual storytelling that merges cinema and continental identity.',
+        image: 'assets/images/filmmaking-archive.png',
+        year: '2025',
+        role: 'Illustration, Branding',
+        client: 'Filmmaking Archive Africa',
+    },
+    superdetective: {
+        tag: 'Film Poster',
+        title: 'The Super Detective',
+        description: 'Film poster for the short film "The Super Detective" (2024), presented by Bad Mama Jama Films. Directed by Liz Karungi. A handwritten-style title over a weathered plaster wall background with storyboard-style child figure illustrations.',
+        image: 'assets/images/super-detective.png',
+        year: '2024',
+        role: 'Poster Design, Art Direction',
+        client: 'Bad Mama Jama Films',
+    },
+    goodgirl: {
+        tag: 'Film Poster',
+        title: 'Be a Good Girl',
+        description: 'Theatrical film poster for "Be a Good Girl" (2023), presented by Bad Mama Jama Films. Written and directed by Nicole Magabo Kiggundu. A rich, cinematic composition — gold serif title over dark green velvet curtains, tagline: "Break at your own risk."',
+        image: 'assets/images/be-a-good-girl.png',
+        year: '2023',
+        role: 'Poster Design, Art Direction',
+        client: 'Bad Mama Jama Films',
+    },
+    normalboy: {
+        tag: 'Film Poster',
+        title: 'A Normal Boy',
+        description: 'Film poster for "A Normal Boy" (2023), presented by Bad Mama Jama Films. Written and directed by Freddie Kagino. Bold amber/orange typography over a moody coral-toned portrait of a young boy, with African textile in the background.',
+        image: 'assets/images/a-normal-boy.png',
+        year: '2023',
+        role: 'Poster Design, Art Direction',
+        client: 'Bad Mama Jama Films',
+    },
+    cheeks: {
+        tag: 'Brand Identity / Packaging',
+        title: "Cheeks N' Chunks",
+        description: "Full brand identity and packaging design for Cheeks N' Chunks — a vibrant Kampala restaurant. The illustrated hippo mascot in colourful African-print attire anchors a playful, culturally rooted identity. Deliverables spanned logo system, fries packaging, cake boxes, business cards, clothing branding, and a full menu.",
+        image: 'assets/images/cheeks-logo.png',
+        images: ['assets/images/cheeks-logo.png', 'assets/images/cheeks-chef.png', 'assets/images/cheeks-packaging.png'],
+        year: '2023',
+        role: 'Brand Identity, Packaging, Illustration',
+        client: "Cheeks N' Chunks, Kampala",
+    },
+    nostalgia: {
+        tag: 'Event Branding / Illustration',
+        title: 'Nostalgia Events',
+        description: "Retro-themed brand identity for Nostalgia Events — a Kampala nightlife experience rooted in throwback culture. The logo suite features a colourful illustrated CD player and a vintage Walkman cassette tape, both rendered with bold pop-art energy. An unapologetically nostalgic visual identity.",
+        image: 'assets/images/nostalgia-logo.png',
+        images: ['assets/images/nostalgia-logo.png', 'assets/images/nostalgia-cassette.png'],
+        year: '2023',
+        role: 'Illustration, Brand Identity',
+        client: 'Nostalgia Events, Kampala',
+    },
+    meraki: {
+        tag: 'Brand Identity',
+        title: 'Meraki Body Bar',
+        description: "Brand identity for Meraki Body Bar — a premium beauty and wellness brand. The logo distils the brand's essence into a single golden teardrop containing a woman's silhouette entwined with botanical leaves, communicating natural beauty, femininity, and self-care.",
+        image: 'assets/images/meraki-logo.png',
+        year: '2024',
+        role: 'Logo Design, Brand Identity',
+        client: 'Meraki Body Bar',
+    },
+    provenance: {
+        tag: 'Branding / Social Media',
+        title: 'Provenance Wellness Centre',
+        description: 'Brand identity and social media design for Provenance Healing & Wellness Centre — a mental health and wellbeing centre in Kira, Nsasa. Clean purple and white identity system applied across awareness posters, event flyers, and social media communications.',
+        image: 'assets/images/provenance-poster.jpg',
+        images: ['assets/images/provenance-poster.jpg', 'assets/images/provenance-poster-2.jpg'],
+        year: '2024',
+        role: 'Branding, Poster Design, Social Media',
+        client: 'Provenance Healing & Wellness Centre',
+    },
+    kampalachazz: {
+        tag: 'Logo Design',
+        title: 'Kampala Jazz Orchestra',
+        description: "Vibrant logo design for The Kampala Jazz Orchestra. A multi-coloured typographic treatment — each letter of JAZZ rendered in a different hue — captures the eclectic, joyful energy of jazz music. The circular 'O' in Orchestra echoes the bell of a brass instrument.",
+        image: 'assets/images/kampala-jazz.png',
+        year: '2023',
+        role: 'Logo Design, Illustration',
+        client: 'The Kampala Jazz Orchestra',
+    },
+    musanacarts: {
+        tag: 'Product Illustration',
+        title: 'Musana Carts',
+        description: 'Detailed product illustration for Musana Carts — a Ugandan social enterprise designing solar-powered smart street food carts for urban vendors. Technical isometric-style cart illustration showing the full cart design including gas, solar battery, pendant lighting, and storage — used for pitch decks and marketing materials.',
+        image: 'assets/images/musana-carts.jpg',
+        images: ['assets/images/musana-carts.jpg', 'assets/images/musana-carts-2.jpg'],
+        year: '2023',
+        role: 'Product Illustration, Design',
+        client: 'Musana Carts, Uganda',
+    },
+    elbowroom: {
+        tag: 'Logo Design',
+        title: 'The Elbow Room',
+        description: "Bold logo design for The Elbow Room — a Ugandan sports podcast. A hand dunking a basketball doubles as the 'L' in ELBOW, with a microphone and headphones icon completing the design. Orange and black on cream — confident, energetic, and unmistakably sports media.",
+        image: 'assets/images/elbow-room.jpg',
+        year: '2024',
+        role: 'Logo Design',
+        client: 'The Elbow Room Podcast',
+    },
+    flykey: {
+        tag: 'Logo Design',
+        title: 'Flykey',
+        description: 'Logo design for Flykey — a drone technology brand. The mark abstracts a quadcopter drone into a clean geometric icon: four circular rotors orbiting a central hub. Black, white, and gold — sharp, tech-forward, and instantly recognisable.',
+        image: 'assets/images/flykey.png',
+        year: '2024',
+        role: 'Logo Design',
+        client: 'Flykey',
+    },
+    lamalo: {
+        tag: 'Packaging Design',
+        title: 'Lamalo Soap',
+        description: 'Packaging design for Lamalo — a natural soap brand. Clean, earthy label design emphasising the organic ingredients. Applied across multiple product variants with a consistent colour-coded system for scent differentiation.',
+        image: 'assets/images/lamalo-soap.png',
+        year: '2024',
+        role: 'Packaging Design, Label Design',
+        client: 'Lamalo Soap',
+    },
+    kroyalcourt: {
+        tag: 'Restaurant Branding',
+        title: 'K-Royal Court',
+        description: 'Full brand identity for K-Royal Court Restaurant & Lounge — "Kowe Enganjani" (Where Are You?). A bold blue and black identity anchored by a spoon-and-fork emblem wrapping the letter K, applied across outdoor signage, menus, and branded collateral in Hoima, Uganda.',
+        image: 'assets/images/k-royal-court-outdoor.jpg',
+        images: ['assets/images/k-royal-court-outdoor.jpg', 'assets/images/k-royal-court.png'],
+        year: '2019',
+        role: 'Brand Identity, Outdoor Branding',
+        client: 'K-Royal Court, Hoima',
+    },
+    '2sistars': {
+        tag: 'Book Design / Social Media',
+        title: '2Sistars Media',
+        description: 'Ongoing creative partnership with 2Sistars Media — a Ugandan film and media production company. Deliverables include the illustrated book cover and 3D mockup for "My Friend Mindy" by Corenne Tumushimiise, plus a full social media design system with branded post templates and event graphics.',
+        image: 'assets/images/2sistars-book.png',
+        images: ['assets/images/2sistars-book.png', 'assets/images/2sistars-social.png'],
+        year: '2025',
+        role: 'Book Design, Social Media Design',
+        client: '2Sistars Media',
+    },
+    kampala: {
+        tag: 'Logo & Catalogue',
+        title: 'Kampala Tile Market',
+        description: 'Logo design and 72-page product catalogue for Kampala Tile Market (KTM) — a retail division of the Tiles Gallery Group, distributing porcelain, ceramics, and sanitary ware across Uganda. Clean, confident identity anchored in navy and gold.',
+        image: 'assets/images/kampala-tile-market.jpg',
+        year: '2017',
+        role: 'Logo Design, Catalogue Layout',
+        client: 'Kampala Tile Market',
+    },
+    aggreyclifford: {
+        tag: 'Advertising',
+        title: 'Aggrey & Clifford',
+        description: 'Creative campaigns for Aggrey & Clifford — an Africa-based full-service integrated advertising agency. Work included Christmas Cards, Party Invitations and event promotional materials.',
+        image: 'assets/images/aggrey-clifford.jpg',
+        year: '2016',
+        role: 'Art Direction, Design',
+        client: 'Aggrey & Clifford',
+    },
+    nile: {
+        tag: 'Advertising',
+        title: 'Nile Breweries',
+        description: 'Billboard and event promotional poster campaigns for Nile Breweries — Uganda\'s No.1 locally produced beer brand with a 59% market share. Campaigns included Club Twist (event marketing) and Nile Gold ("Pure Malt. Pure Gold."). Produced at Aggrey & Clifford.',
+        image: 'assets/images/nile-breweries-club.jpg',
+        year: '2016',
+        role: 'Art Direction, Design',
+        client: 'Nile Breweries / Aggrey & Clifford',
+    },
+    kcb: {
+        tag: 'Digital Advertising',
+        title: 'KCB Bank Uganda',
+        description: 'Annual report, billboard, social media, internal communications and stationery design for KCB Bank Uganda. Featured the KCB MOBI mobile banking campaign — "Take your bank everywhere with you." Produced while at Aggrey & Clifford.',
+        image: 'assets/images/kcb-bank.jpg',
+        year: '2016',
+        role: 'Art Direction, Print & Digital Design',
+        client: 'KCB Bank Uganda / Aggrey & Clifford',
+    },
+    vodafone: {
+        tag: 'Advertising',
+        title: 'Vodafone Uganda',
+        description: 'Product promotional poster campaigns for Vodafone Uganda — Uganda\'s leading 4G internet service provider. Featured the Huawei Y6Pro LTE handset launch with a "Keep it cool and stylish" tone. Produced while at Aggrey & Clifford.',
+        image: 'assets/images/vodafone-uganda.jpg',
+        year: '2016',
+        role: 'Art Direction, Poster Design',
+        client: 'Vodafone Uganda / Aggrey & Clifford',
+    },
+    jameson: {
+        tag: 'Concept Design',
+        title: 'Jameson — Pop Up Party',
+        description: 'Conceptual event poster for a Jameson Irish Whiskey Pop Up Party — created as a pitch piece while at Aggrey & Clifford. Targeted at an 18–25 year old audience. Bold, premium party aesthetic featuring DJ Crisio at Sky Lounge, Kampala.',
+        image: 'assets/images/jameson-concept.jpg',
+        year: '2016',
+        role: 'Concept, Poster Design',
+        client: 'Conceptual / Aggrey & Clifford',
+    },
+    kcountryclub: {
+        tag: 'Golf Club Branding',
+        title: 'K-Country Club',
+        description: 'Brand identity for K-Country Club, Hoima City — an exclusive golf and country club. The identity centres on a silhouetted golfer mid-swing framed by sweeping green and blue ribbons, conveying prestige, motion, and the lush grounds of the club. Deliverables included logo, stationery, and business cards.',
+        image: 'assets/images/k-country-club.jpg',
+        images: ['assets/images/k-country-club.jpg', 'assets/images/k-country-club-card.jpg'],
+        year: '2018',
+        role: 'Brand Identity, Stationery Design',
+        client: 'K-Country Club, Hoima',
+    },
+    kinvestments: {
+        tag: 'Logo Design',
+        title: 'K-Investments Ltd',
+        description: 'Logo design for K-Investments Ltd — a Ugandan investment firm. The mark combines bar chart growth bars with a rising arrow inside a bold green circular ring, communicating financial growth and forward momentum. Tagline: "Your future brought forward."',
+        image: 'assets/images/k-investments.jpg',
+        year: '2018',
+        role: 'Logo Design',
+        client: 'K-Investments Ltd',
+    },
+    reve: {
+        tag: 'Brand Identity',
+        title: 'Hôtel Rêve Du Lac',
+        description: 'Full brand identity for Hôtel Rêve Du Lac — a premium lakeside hotel in Uganda. The identity marries classic hospitality elegance with a distinctly African warmth. Deliverables spanned logo design, brand guidelines, social media visuals, and branded vehicle wraps.',
+        image: 'assets/images/reve-du-lac-social.jpg',
+        year: '2025',
+        role: 'Brand Identity, Art Direction',
+        client: 'Hôtel Rêve Du Lac',
+    },
+    maxauto: {
+        tag: 'Branding / Marketing',
+        title: 'Max Auto+',
+        description: 'Brand identity and marketing materials for Max Auto+ — an automotive service centre in Kisasi, Kampala. Bold red and black visual language with a dynamic logo. Deliverables included logo system, service flyers, and promotional materials.',
+        image: 'assets/images/max-auto.png',
+        year: '2024',
+        role: 'Brand Identity, Flyer Design',
+        client: 'Max Auto+, Kampala',
+    },
+    pinkturttle: {
+        tag: 'Logo Design',
+        title: 'Pink Turtle International Daycare',
+        description: 'Playful logo design for Pink Turtle International Daycare. A friendly illustrated turtle character with a globe shell — communicating international education, curiosity, and warmth for children and parents alike.',
+        image: 'assets/images/pink-turtle.png',
+        year: '2024',
+        role: 'Logo Design, Illustration',
+        client: 'Pink Turtle International Daycare',
+    },
+    kmilk: {
+        tag: 'Brand Identity',
+        title: 'Kikwite Dairy Farm — K-Milk',
+        description: 'Playful brand identity for Kikwite Dairy Farm\'s K-Milk product line — "Hoima\'s Freshest Milk." A friendly illustrated cartoon cow hugging a milk bottle creates an immediately warm and approachable brand personality, set against a bold royal blue. Designed for packaging, signage, and marketing materials.',
+        image: 'assets/images/k-milk.jpg',
+        images: ['assets/images/k-milk.jpg', 'assets/images/k-milk-2.jpg'],
+        year: '2017',
+        role: 'Brand Identity, Packaging Design',
+        client: 'Kikwite Dairy Farm, Hoima',
+    },
+};
+
+document.addEventListener('DOMContentLoaded', () => {
+
+    // Smooth scrolling
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+            e.preventDefault();
+            const target = document.querySelector(this.getAttribute('href'));
+            if (target) {
+                target.scrollIntoView({ behavior: 'smooth' });
+            }
+        });
+    });
+
+    // Navbar scroll effect
+    const navbar = document.querySelector('.navbar');
+    window.addEventListener('scroll', () => {
+        if (window.scrollY > 50) {
+            navbar.style.background = 'rgba(10, 10, 10, 0.95)';
+        } else {
+            navbar.style.background = 'rgba(10, 10, 10, 0.8)';
+        }
+    });
+
+    // Mobile menu
+    const hamburger = document.querySelector('.hamburger');
+    const navLinks = document.querySelector('.nav-links');
+    const navbarElement = document.querySelector('.navbar');
+
+    if (hamburger) {
+        hamburger.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+            navbarElement.classList.toggle('active');
+            document.body.style.overflow = navLinks.classList.contains('active') ? 'hidden' : '';
+        });
+
+        document.querySelectorAll('.nav-links a').forEach(link => {
+            link.addEventListener('click', () => {
+                navLinks.classList.remove('active');
+                navbarElement.classList.remove('active');
+                document.body.style.overflow = '';
+            });
+        });
+    }
+
+    // Gallery filter
+    const filterBtns = document.querySelectorAll('.filter-btn');
+    const galleryItems = document.querySelectorAll('.gallery-item');
+
+    filterBtns.forEach(btn => {
+        btn.addEventListener('click', () => {
+            filterBtns.forEach(b => b.classList.remove('active'));
+            btn.classList.add('active');
+
+            const filter = btn.dataset.filter;
+            galleryItems.forEach(item => {
+                if (filter === 'all' || item.dataset.category === filter) {
+                    item.style.display = '';
+                    item.style.opacity = '1';
+                } else {
+                    item.style.display = 'none';
+                }
+            });
+        });
+    });
+
+    // Modal
+    const modal = document.getElementById('projectModal');
+    const modalClose = document.getElementById('modalClose');
+
+    function openModal(projectKey) {
+        const project = projects[projectKey];
+        if (!project) return;
+
+        document.getElementById('modalTag').textContent = project.tag;
+        document.getElementById('modalTitle').textContent = project.title;
+        document.getElementById('modalDescription').textContent = project.description;
+
+        const modalImg = document.getElementById('modalImage');
+        if (project.image) {
+            modalImg.style.background = '';
+            modalImg.style.backgroundImage = `url('${project.image}')`;
+            modalImg.style.backgroundSize = 'contain';
+            modalImg.style.backgroundRepeat = 'no-repeat';
+            modalImg.style.backgroundPosition = 'center';
+            modalImg.style.backgroundColor = '#111';
+        } else {
+            modalImg.style.backgroundImage = '';
+            modalImg.style.background = project.gradient;
+        }
+
+        document.getElementById('modalMeta').innerHTML = `
+            <div class="modal-meta-item">
+                <span class="modal-meta-label">Year</span>
+                <span class="modal-meta-value">${project.year}</span>
+            </div>
+            <div class="modal-meta-item">
+                <span class="modal-meta-label">Role</span>
+                <span class="modal-meta-value">${project.role}</span>
+            </div>
+            <div class="modal-meta-item">
+                <span class="modal-meta-label">Client</span>
+                <span class="modal-meta-value">${project.client}</span>
+            </div>
+        `;
+
+        modal.setAttribute('aria-hidden', 'false');
+        modal.classList.add('active');
+        document.body.style.overflow = 'hidden';
+    }
+
+    function closeModal() {
+        modal.classList.remove('active');
+        modal.setAttribute('aria-hidden', 'true');
+        document.body.style.overflow = '';
+    }
+
+    galleryItems.forEach(item => {
+        item.addEventListener('click', () => openModal(item.dataset.project));
+    });
+
+    modalClose.addEventListener('click', closeModal);
+    modal.addEventListener('click', (e) => { if (e.target === modal) closeModal(); });
+    document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape' && modal.classList.contains('active')) closeModal();
+    });
+});
