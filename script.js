@@ -106,6 +106,16 @@ const projects = {
         role: 'Logo Design',
         client: 'Flykey',
     },
+    ohwonder: {
+        tag: 'Concept — Album Art',
+        title: 'Oh Wonder — Concept Album',
+        description: 'Concept album cover and tracklist design for Oh Wonder — a BBC recording. A moody, cinematic composition: a lone silhouetted female figure with wind-swept hair against a duotone dusk sky and crescent moon. The OW monogram mark is set in clean, spaced-out white type. The back cover presents the 15-track tracklist against a cooler blue-teal version of the same imagery. Created at La Sierra University.',
+        image: 'assets/images/oh-wonder-cover.jpg',
+        images: ['assets/images/oh-wonder-cover.jpg', 'assets/images/oh-wonder-tracklist.jpg'],
+        year: '2017',
+        role: 'Album Art, Concept Design',
+        client: 'Concept / La Sierra University',
+    },
     gerber: {
         tag: 'Concept — Packaging',
         title: 'Gerber — First Essentials',
