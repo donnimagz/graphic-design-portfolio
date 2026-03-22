@@ -89,7 +89,7 @@
                 </div>
             </div>
             <div class="gallery-item" data-project="reve" data-category="Branding">
-                <img src="assets/images/reve-du-lac-social.jpg" alt="Rêve Du Lac" class="gallery-img">
+                <img src="assets/images/reve-du-lac-icon.jpg" alt="Hôtel Rêve Du Lac" class="gallery-img">
                 <div class="overlay">
                     <h3>Hôtel Rêve Du Lac</h3>
                     <p>Brand Identity — 2025</p>
@@ -193,20 +193,6 @@
                     <p>Branding / Social Media — 2024</p>
                 </div>
             </div>
-            <div class="gallery-item" data-project="kampalachazz" data-category="Illustration">
-                <img src="assets/images/kampala-jazz.png" alt="Kampala Jazz Orchestra" class="gallery-img">
-                <div class="overlay">
-                    <h3>Kampala Jazz Orchestra</h3>
-                    <p>Logo Design — 2023</p>
-                </div>
-            </div>
-            <div class="gallery-item" data-project="musanacarts" data-category="Illustration">
-                <img src="assets/images/musana-carts.jpg" alt="Musana Carts" class="gallery-img">
-                <div class="overlay">
-                    <h3>Musana Carts</h3>
-                    <p>Product Illustration — 2023</p>
-                </div>
-            </div>
             <div class="gallery-item" data-project="elbowroom" data-category="Branding">
                 <img src="assets/images/elbow-room.jpg" alt="The Elbow Room" class="gallery-img">
                 <div class="overlay">
@@ -214,25 +200,11 @@
                     <p>Logo Design — 2024</p>
                 </div>
             </div>
-            <div class="gallery-item" data-project="kcountryclub" data-category="Branding">
-                <img src="assets/images/k-country-club.jpg" alt="K-Country Club" class="gallery-img">
-                <div class="overlay">
-                    <h3>K-Country Club</h3>
-                    <p>Golf Club Branding — 2018</p>
-                </div>
-            </div>
             <div class="gallery-item" data-project="kinvestments" data-category="Branding">
                 <img src="assets/images/k-investments.jpg" alt="K-Investments Ltd" class="gallery-img">
                 <div class="overlay">
                     <h3>K-Investments Ltd</h3>
                     <p>Logo Design — 2018</p>
-                </div>
-            </div>
-            <div class="gallery-item" data-project="kmilk" data-category="Branding">
-                <img src="assets/images/k-milk.jpg" alt="Kikwite Dairy Farm" class="gallery-img">
-                <div class="overlay">
-                    <h3>Kikwite Dairy Farm</h3>
-                    <p>Brand Identity — 2017</p>
                 </div>
             </div>
             <div class="gallery-item" data-project="flykey" data-category="Branding">
@@ -295,14 +267,31 @@
     <div class="modal-overlay" id="projectModal" aria-modal="true" role="dialog" aria-hidden="true">
         <div class="modal">
             <button class="modal-close" id="modalClose" aria-label="Close modal">&times;</button>
-            <div class="modal-image">
-                <div class="modal-image-placeholder" id="modalImage"></div>
-            </div>
-            <div class="modal-body">
-                <span class="modal-tag" id="modalTag"></span>
-                <h2 class="modal-title" id="modalTitle"></h2>
-                <p class="modal-description" id="modalDescription"></p>
-                <div class="modal-meta" id="modalMeta"></div>
+
+            <div class="modal-inner">
+                <!-- Left: Image slideshow -->
+                <div class="modal-gallery">
+                    <div class="modal-gallery-main" id="modalGalleryMain">
+                        <div class="modal-image-placeholder" id="modalImage"></div>
+                        <button class="gallery-arrow gallery-prev" id="galleryPrev" aria-label="Previous image">&#8249;</button>
+                        <button class="gallery-arrow gallery-next" id="galleryNext" aria-label="Next image">&#8250;</button>
+                        <div class="gallery-counter" id="galleryCounter"></div>
+                    </div>
+                    <div class="modal-thumbs" id="modalThumbs"></div>
+                </div>
+
+                <!-- Right: Content -->
+                <div class="modal-body">
+                    <span class="modal-tag" id="modalTag"></span>
+                    <h2 class="modal-title" id="modalTitle"></h2>
+                    <p class="modal-description" id="modalDescription"></p>
+                    <div class="modal-meta" id="modalMeta"></div>
+
+                    <div class="modal-project-nav">
+                        <button class="modal-nav-btn" id="modalPrev">&#8592; Prev</button>
+                        <button class="modal-nav-btn" id="modalNext">Next &#8594;</button>
+                    </div>
+                </div>
             </div>
         </div>
     </div>

@@ -4,6 +4,7 @@ const projects = {
         title: 'Filmmaking Archive Africa',
         description: 'A detailed illustrated logo for Filmmaking Archive Africa — a camera lens morphed into the shape of the African continent, rendered in warm brown, gold, and olive tones. Bold visual storytelling that merges cinema and continental identity.',
         image: 'assets/images/filmmaking-archive.png',
+        images: ['assets/images/filmmaking-archive.png', 'assets/images/filmmaking-archive-2.png', 'assets/images/filmmaking-archive-3.png'],
         year: '2025',
         role: 'Illustration, Branding',
         client: 'Filmmaking Archive Africa',
@@ -13,6 +14,7 @@ const projects = {
         title: 'The Super Detective',
         description: 'Film poster for the short film "The Super Detective" (2024), presented by Bad Mama Jama Films. Directed by Liz Karungi. A handwritten-style title over a weathered plaster wall background with storyboard-style child figure illustrations.',
         image: 'assets/images/super-detective.png',
+        images: ['assets/images/super-detective.png', 'assets/images/super-detective-2.png', 'assets/images/super-detective-3.png'],
         year: '2024',
         role: 'Poster Design, Art Direction',
         client: 'Bad Mama Jama Films',
@@ -22,6 +24,7 @@ const projects = {
         title: 'Be a Good Girl',
         description: 'Theatrical film poster for "Be a Good Girl" (2023), presented by Bad Mama Jama Films. Written and directed by Nicole Magabo Kiggundu. A rich, cinematic composition — gold serif title over dark green velvet curtains, tagline: "Break at your own risk."',
         image: 'assets/images/be-a-good-girl.png',
+        images: ['assets/images/be-a-good-girl.png', 'assets/images/be-a-good-girl-2.png'],
         year: '2023',
         role: 'Poster Design, Art Direction',
         client: 'Bad Mama Jama Films',
@@ -31,6 +34,7 @@ const projects = {
         title: 'A Normal Boy',
         description: 'Film poster for "A Normal Boy" (2023), presented by Bad Mama Jama Films. Written and directed by Freddie Kagino. Bold amber/orange typography over a moody coral-toned portrait of a young boy, with African textile in the background.',
         image: 'assets/images/a-normal-boy.png',
+        images: ['assets/images/a-normal-boy.png'],
         year: '2023',
         role: 'Poster Design, Art Direction',
         client: 'Bad Mama Jama Films',
@@ -73,25 +77,6 @@ const projects = {
         year: '2024',
         role: 'Branding, Poster Design, Social Media',
         client: 'Provenance Healing & Wellness Centre',
-    },
-    kampalachazz: {
-        tag: 'Logo Design',
-        title: 'Kampala Jazz Orchestra',
-        description: "Vibrant logo design for The Kampala Jazz Orchestra. A multi-coloured typographic treatment — each letter of JAZZ rendered in a different hue — captures the eclectic, joyful energy of jazz music. The circular 'O' in Orchestra echoes the bell of a brass instrument.",
-        image: 'assets/images/kampala-jazz.png',
-        year: '2023',
-        role: 'Logo Design, Illustration',
-        client: 'The Kampala Jazz Orchestra',
-    },
-    musanacarts: {
-        tag: 'Product Illustration',
-        title: 'Musana Carts',
-        description: 'Detailed product illustration for Musana Carts — a Ugandan social enterprise designing solar-powered smart street food carts for urban vendors. Technical isometric-style cart illustration showing the full cart design including gas, solar battery, pendant lighting, and storage — used for pitch decks and marketing materials.',
-        image: 'assets/images/musana-carts.jpg',
-        images: ['assets/images/musana-carts.jpg', 'assets/images/musana-carts-2.jpg'],
-        year: '2023',
-        role: 'Product Illustration, Design',
-        client: 'Musana Carts, Uganda',
     },
     elbowroom: {
         tag: 'Logo Design',
@@ -194,16 +179,6 @@ const projects = {
         role: 'Concept, Poster Design',
         client: 'Conceptual / Aggrey & Clifford',
     },
-    kcountryclub: {
-        tag: 'Golf Club Branding',
-        title: 'K-Country Club',
-        description: 'Brand identity for K-Country Club, Hoima City — an exclusive golf and country club. The identity centres on a silhouetted golfer mid-swing framed by sweeping green and blue ribbons, conveying prestige, motion, and the lush grounds of the club. Deliverables included logo, stationery, and business cards.',
-        image: 'assets/images/k-country-club.jpg',
-        images: ['assets/images/k-country-club.jpg', 'assets/images/k-country-club-card.jpg'],
-        year: '2018',
-        role: 'Brand Identity, Stationery Design',
-        client: 'K-Country Club, Hoima',
-    },
     kinvestments: {
         tag: 'Logo Design',
         title: 'K-Investments Ltd',
@@ -217,7 +192,8 @@ const projects = {
         tag: 'Brand Identity',
         title: 'Hôtel Rêve Du Lac',
         description: 'Full brand identity for Hôtel Rêve Du Lac — a premium lakeside hotel in Uganda. The identity marries classic hospitality elegance with a distinctly African warmth. Deliverables spanned logo design, brand guidelines, social media visuals, and branded vehicle wraps.',
-        image: 'assets/images/reve-du-lac-social.jpg',
+        image: 'assets/images/reve-du-lac-icon.jpg',
+        images: ['assets/images/reve-du-lac-icon.jpg', 'assets/images/reve-du-lac-social.jpg', 'assets/images/reve-du-lac-logo.png', 'assets/images/reve-du-lac-2.jpg', 'assets/images/reve-du-lac-3.png'],
         year: '2025',
         role: 'Brand Identity, Art Direction',
         client: 'Hôtel Rêve Du Lac',
@@ -227,6 +203,7 @@ const projects = {
         title: 'Max Auto+',
         description: 'Brand identity and marketing materials for Max Auto+ — an automotive service centre in Kisasi, Kampala. Bold red and black visual language with a dynamic logo. Deliverables included logo system, service flyers, and promotional materials.',
         image: 'assets/images/max-auto.png',
+        images: ['assets/images/max-auto.png', 'assets/images/max-auto-2.png', 'assets/images/max-auto-logo.png'],
         year: '2024',
         role: 'Brand Identity, Flyer Design',
         client: 'Max Auto+, Kampala',
@@ -239,16 +216,6 @@ const projects = {
         year: '2024',
         role: 'Logo Design, Illustration',
         client: 'Pink Turtle International Daycare',
-    },
-    kmilk: {
-        tag: 'Brand Identity',
-        title: 'Kikwite Dairy Farm — K-Milk',
-        description: 'Playful brand identity for Kikwite Dairy Farm\'s K-Milk product line — "Hoima\'s Freshest Milk." A friendly illustrated cartoon cow hugging a milk bottle creates an immediately warm and approachable brand personality, set against a bold royal blue. Designed for packaging, signage, and marketing materials.',
-        image: 'assets/images/k-milk.jpg',
-        images: ['assets/images/k-milk.jpg', 'assets/images/k-milk-2.jpg'],
-        year: '2017',
-        role: 'Brand Identity, Packaging Design',
-        client: 'Kikwite Dairy Farm, Hoima',
     },
 };
 
@@ -317,31 +284,88 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-    // Modal
-    const modal = document.getElementById('projectModal');
-    const modalClose = document.getElementById('modalClose');
+    // ── Modal ──
+    const modal       = document.getElementById('projectModal');
+    const modalClose  = document.getElementById('modalClose');
+    const modalPrev   = document.getElementById('modalPrev');
+    const modalNext   = document.getElementById('modalNext');
+    const galleryPrev = document.getElementById('galleryPrev');
+    const galleryNext = document.getElementById('galleryNext');
+    const thumbsEl    = document.getElementById('modalThumbs');
+    const counterEl   = document.getElementById('galleryCounter');
+    const modalImg    = document.getElementById('modalImage');
+
+    // Ordered list of project keys matching gallery order
+    const projectOrder = [...document.querySelectorAll('.gallery-item')]
+        .map(el => el.dataset.project);
+
+    let currentProjectIndex = 0;
+    let currentImageIndex   = 0;
+    let currentImages       = [];
+
+    function setSlide(idx) {
+        currentImageIndex = idx;
+        const img = currentImages[idx];
+        if (img) {
+            modalImg.style.backgroundImage = `url('${img}')`;
+            modalImg.style.backgroundSize  = 'contain';
+            modalImg.style.backgroundRepeat = 'no-repeat';
+            modalImg.style.backgroundPosition = 'center';
+            modalImg.style.backgroundColor = '#0a0a0a';
+        } else {
+            const project = projects[projectOrder[currentProjectIndex]];
+            modalImg.style.backgroundImage = '';
+            modalImg.style.background = project.gradient || '#1a1a1a';
+        }
+
+        // Update arrows
+        galleryPrev.classList.toggle('hidden', currentImages.length <= 1);
+        galleryNext.classList.toggle('hidden', currentImages.length <= 1);
+        galleryPrev.disabled = idx === 0;
+        galleryNext.disabled = idx === currentImages.length - 1;
+
+        // Counter
+        counterEl.textContent = currentImages.length > 1
+            ? `${idx + 1} / ${currentImages.length}`
+            : '';
+
+        // Thumbnails highlight
+        thumbsEl.querySelectorAll('.modal-thumb').forEach((t, i) => {
+            t.classList.toggle('active', i === idx);
+        });
+    }
+
+    function buildThumbs() {
+        thumbsEl.innerHTML = '';
+        if (currentImages.length <= 1) return;
+        currentImages.forEach((src, i) => {
+            const t = document.createElement('div');
+            t.className = 'modal-thumb' + (i === 0 ? ' active' : '');
+            t.style.backgroundImage = `url('${src}')`;
+            t.addEventListener('click', () => setSlide(i));
+            thumbsEl.appendChild(t);
+        });
+    }
 
     function openModal(projectKey) {
         const project = projects[projectKey];
         if (!project) return;
 
-        document.getElementById('modalTag').textContent = project.tag;
+        currentProjectIndex = projectOrder.indexOf(projectKey);
+
+        // Build images array
+        currentImages = project.images
+            ? [...project.images]
+            : project.image
+                ? [project.image]
+                : [];
+
+        currentImageIndex = 0;
+
+        // Populate content
+        document.getElementById('modalTag').textContent   = project.tag;
         document.getElementById('modalTitle').textContent = project.title;
         document.getElementById('modalDescription').textContent = project.description;
-
-        const modalImg = document.getElementById('modalImage');
-        if (project.image) {
-            modalImg.style.background = '';
-            modalImg.style.backgroundImage = `url('${project.image}')`;
-            modalImg.style.backgroundSize = 'contain';
-            modalImg.style.backgroundRepeat = 'no-repeat';
-            modalImg.style.backgroundPosition = 'center';
-            modalImg.style.backgroundColor = '#111';
-        } else {
-            modalImg.style.backgroundImage = '';
-            modalImg.style.background = project.gradient;
-        }
-
         document.getElementById('modalMeta').innerHTML = `
             <div class="modal-meta-item">
                 <span class="modal-meta-label">Year</span>
@@ -357,6 +381,13 @@ document.addEventListener('DOMContentLoaded', () => {
             </div>
         `;
 
+        buildThumbs();
+        setSlide(0);
+
+        // Project nav buttons
+        modalPrev.disabled = currentProjectIndex === 0;
+        modalNext.disabled = currentProjectIndex === projectOrder.length - 1;
+
         modal.setAttribute('aria-hidden', 'false');
         modal.classList.add('active');
         document.body.style.overflow = 'hidden';
@@ -368,13 +399,34 @@ document.addEventListener('DOMContentLoaded', () => {
         document.body.style.overflow = '';
     }
 
+    // Gallery slide arrows
+    galleryPrev.addEventListener('click', () => {
+        if (currentImageIndex > 0) setSlide(currentImageIndex - 1);
+    });
+    galleryNext.addEventListener('click', () => {
+        if (currentImageIndex < currentImages.length - 1) setSlide(currentImageIndex + 1);
+    });
+
+    // Project prev/next
+    modalPrev.addEventListener('click', () => {
+        if (currentProjectIndex > 0) openModal(projectOrder[currentProjectIndex - 1]);
+    });
+    modalNext.addEventListener('click', () => {
+        if (currentProjectIndex < projectOrder.length - 1) openModal(projectOrder[currentProjectIndex + 1]);
+    });
+
+    // Keyboard nav
+    document.addEventListener('keydown', (e) => {
+        if (!modal.classList.contains('active')) return;
+        if (e.key === 'Escape')       closeModal();
+        if (e.key === 'ArrowLeft')    { if (currentImageIndex > 0) setSlide(currentImageIndex - 1); }
+        if (e.key === 'ArrowRight')   { if (currentImageIndex < currentImages.length - 1) setSlide(currentImageIndex + 1); }
+    });
+
     galleryItems.forEach(item => {
         item.addEventListener('click', () => openModal(item.dataset.project));
     });
 
     modalClose.addEventListener('click', closeModal);
     modal.addEventListener('click', (e) => { if (e.target === modal) closeModal(); });
-    document.addEventListener('keydown', (e) => {
-        if (e.key === 'Escape' && modal.classList.contains('active')) closeModal();
-    });
 });
