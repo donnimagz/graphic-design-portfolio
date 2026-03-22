@@ -106,6 +106,16 @@ const projects = {
         role: 'Logo Design',
         client: 'Flykey',
     },
+    lasierra: {
+        tag: 'Event Poster',
+        title: 'La Sierra Summer Arts Festival',
+        description: 'Poster series for the La Sierra University Summer Arts Festival — a multidisciplinary arts event spanning Music, Film, Writing, Art and Performance Art, June 13–July 21. Bold photographic collage technique layering palm tree silhouettes, duotone colour washes and distressed typography to capture the heat and energy of a California summer arts festival.',
+        image: 'assets/images/lasierra-1.jpg',
+        images: ['assets/images/lasierra-1.jpg', 'assets/images/lasierra-2.jpg'],
+        year: '2017',
+        role: 'Poster Design, Art Direction',
+        client: 'La Sierra University',
+    },
     lamalo: {
         tag: 'Packaging Design',
         title: 'Lamalo Soap',
