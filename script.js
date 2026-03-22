@@ -4,6 +4,7 @@ const projects = {
         title: 'Filmmaking Archive Africa',
         description: 'A detailed illustrated logo for Filmmaking Archive Africa — a camera lens morphed into the shape of the African continent, rendered in warm brown, gold, and olive tones. Bold visual storytelling that merges cinema and continental identity.',
         image: 'assets/images/filmmaking-archive.png',
+        images: ['assets/images/filmmaking-archive.png', 'assets/images/filmmaking-archive-2.png', 'assets/images/filmmaking-archive-3.png'],
         year: '2025',
         role: 'Illustration, Branding',
         client: 'Filmmaking Archive Africa',
@@ -13,6 +14,7 @@ const projects = {
         title: 'The Super Detective',
         description: 'Film poster for the short film "The Super Detective" (2024), presented by Bad Mama Jama Films. Directed by Liz Karungi. A handwritten-style title over a weathered plaster wall background with storyboard-style child figure illustrations.',
         image: 'assets/images/super-detective.png',
+        images: ['assets/images/super-detective.png', 'assets/images/super-detective-2.png', 'assets/images/super-detective-3.png'],
         year: '2024',
         role: 'Poster Design, Art Direction',
         client: 'Bad Mama Jama Films',
@@ -22,6 +24,7 @@ const projects = {
         title: 'Be a Good Girl',
         description: 'Theatrical film poster for "Be a Good Girl" (2023), presented by Bad Mama Jama Films. Written and directed by Nicole Magabo Kiggundu. A rich, cinematic composition — gold serif title over dark green velvet curtains, tagline: "Break at your own risk."',
         image: 'assets/images/be-a-good-girl.png',
+        images: ['assets/images/be-a-good-girl.png', 'assets/images/be-a-good-girl-2.png'],
         year: '2023',
         role: 'Poster Design, Art Direction',
         client: 'Bad Mama Jama Films',
@@ -163,6 +166,7 @@ const projects = {
         title: 'Nile Breweries',
         description: 'Billboard and event promotional poster campaigns for Nile Breweries — Uganda\'s No.1 locally produced beer brand with a 59% market share. Campaigns included Club Twist (event marketing) and Nile Gold ("Pure Malt. Pure Gold."). Produced at Aggrey & Clifford.',
         image: 'assets/images/nile-breweries-club.jpg',
+        images: ['assets/images/nile-breweries-club.jpg', 'assets/images/nile-breweries-2.jpg', 'assets/images/nile-breweries-gold.jpg'],
         year: '2016',
         role: 'Art Direction, Design',
         client: 'Nile Breweries / Aggrey & Clifford',
@@ -218,6 +222,7 @@ const projects = {
         title: 'Hôtel Rêve Du Lac',
         description: 'Full brand identity for Hôtel Rêve Du Lac — a premium lakeside hotel in Uganda. The identity marries classic hospitality elegance with a distinctly African warmth. Deliverables spanned logo design, brand guidelines, social media visuals, and branded vehicle wraps.',
         image: 'assets/images/reve-du-lac-social.jpg',
+        images: ['assets/images/reve-du-lac-social.jpg', 'assets/images/reve-du-lac.png', 'assets/images/reve-du-lac-logo.png', 'assets/images/reve-du-lac-2.jpg', 'assets/images/reve-du-lac-3.png'],
         year: '2025',
         role: 'Brand Identity, Art Direction',
         client: 'Hôtel Rêve Du Lac',
@@ -227,6 +232,7 @@ const projects = {
         title: 'Max Auto+',
         description: 'Brand identity and marketing materials for Max Auto+ — an automotive service centre in Kisasi, Kampala. Bold red and black visual language with a dynamic logo. Deliverables included logo system, service flyers, and promotional materials.',
         image: 'assets/images/max-auto.png',
+        images: ['assets/images/max-auto.png', 'assets/images/max-auto-logo.png', 'assets/images/max-auto-2.png'],
         year: '2024',
         role: 'Brand Identity, Flyer Design',
         client: 'Max Auto+, Kampala',
@@ -249,6 +255,16 @@ const projects = {
         year: '2017',
         role: 'Brand Identity, Packaging Design',
         client: 'Kikwite Dairy Farm, Hoima',
+    },
+    kstables: {
+        tag: 'Equestrian Branding',
+        title: 'K-Stables',
+        description: 'Brand identity for K-Stables, Hoima — an equestrian facility and horse-riding centre. A bold, authoritative mark featuring a rearing stallion within a shield emblem, conveying power, prestige, and the heritage of equestrian sport. Applied across signage, branded merchandise, and communications.',
+        image: 'assets/images/k-stables.png',
+        images: ['assets/images/k-stables.png', 'assets/images/k-stables-2.png'],
+        year: '2018',
+        role: 'Brand Identity, Logo Design',
+        client: 'K-Stables, Hoima',
     },
 };
 
@@ -320,6 +336,36 @@ document.addEventListener('DOMContentLoaded', () => {
     // Modal
     const modal = document.getElementById('projectModal');
     const modalClose = document.getElementById('modalClose');
+    const carouselPrev = document.getElementById('carouselPrev');
+    const carouselNext = document.getElementById('carouselNext');
+    const carouselCounter = document.getElementById('carouselCounter');
+
+    let currentImages = [];
+    let currentImageIndex = 0;
+
+    function setModalImage(src) {
+        const modalImg = document.getElementById('modalImage');
+        modalImg.style.backgroundImage = `url('${src}')`;
+        modalImg.style.backgroundSize = 'contain';
+        modalImg.style.backgroundRepeat = 'no-repeat';
+        modalImg.style.backgroundPosition = 'center';
+        modalImg.style.backgroundColor = '#111';
+    }
+
+    function updateCarousel() {
+        setModalImage(currentImages[currentImageIndex]);
+
+        if (currentImages.length > 1) {
+            carouselCounter.textContent = `${currentImageIndex + 1} / ${currentImages.length}`;
+            carouselCounter.classList.add('visible');
+            carouselPrev.classList.toggle('hidden', currentImageIndex === 0);
+            carouselNext.classList.toggle('hidden', currentImageIndex === currentImages.length - 1);
+        } else {
+            carouselCounter.classList.remove('visible');
+            carouselPrev.classList.add('hidden');
+            carouselNext.classList.add('hidden');
+        }
+    }
 
     function openModal(projectKey) {
         const project = projects[projectKey];
@@ -329,18 +375,9 @@ document.addEventListener('DOMContentLoaded', () => {
         document.getElementById('modalTitle').textContent = project.title;
         document.getElementById('modalDescription').textContent = project.description;
 
-        const modalImg = document.getElementById('modalImage');
-        if (project.image) {
-            modalImg.style.background = '';
-            modalImg.style.backgroundImage = `url('${project.image}')`;
-            modalImg.style.backgroundSize = 'contain';
-            modalImg.style.backgroundRepeat = 'no-repeat';
-            modalImg.style.backgroundPosition = 'center';
-            modalImg.style.backgroundColor = '#111';
-        } else {
-            modalImg.style.backgroundImage = '';
-            modalImg.style.background = project.gradient;
-        }
+        currentImages = project.images || (project.image ? [project.image] : []);
+        currentImageIndex = 0;
+        updateCarousel();
 
         document.getElementById('modalMeta').innerHTML = `
             <div class="modal-meta-item">
@@ -368,6 +405,16 @@ document.addEventListener('DOMContentLoaded', () => {
         document.body.style.overflow = '';
     }
 
+    carouselPrev.addEventListener('click', (e) => {
+        e.stopPropagation();
+        if (currentImageIndex > 0) { currentImageIndex--; updateCarousel(); }
+    });
+
+    carouselNext.addEventListener('click', (e) => {
+        e.stopPropagation();
+        if (currentImageIndex < currentImages.length - 1) { currentImageIndex++; updateCarousel(); }
+    });
+
     galleryItems.forEach(item => {
         item.addEventListener('click', () => openModal(item.dataset.project));
     });
@@ -375,6 +422,9 @@ document.addEventListener('DOMContentLoaded', () => {
     modalClose.addEventListener('click', closeModal);
     modal.addEventListener('click', (e) => { if (e.target === modal) closeModal(); });
     document.addEventListener('keydown', (e) => {
-        if (e.key === 'Escape' && modal.classList.contains('active')) closeModal();
+        if (!modal.classList.contains('active')) return;
+        if (e.key === 'Escape') closeModal();
+        if (e.key === 'ArrowLeft' && currentImageIndex > 0) { currentImageIndex--; updateCarousel(); }
+        if (e.key === 'ArrowRight' && currentImageIndex < currentImages.length - 1) { currentImageIndex++; updateCarousel(); }
     });
 });
